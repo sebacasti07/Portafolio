@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import fotoPerfil from '../images/Foto_Perfil.jpg';
+import videoPerfil from '../images/Video_Perfil.mp4';
 
 const Perfil = () => {
   return (
@@ -8,10 +8,14 @@ const Perfil = () => {
       <Container>
         <Row className="fila-perfil">
           <Col md={8}>
-            <img
-              src={fotoPerfil}
-              alt="Foto de Perfil"
+            <video
+              src={videoPerfil}
+              aria-label="Video de perfil"
               className="imagen-perfil"
+              autoPlay
+              loop
+              muted
+              playsInline
               style={{ width: '150px', height: '150px', objectFit: 'cover' }}
             />
             <h1 className="nombre-perfil">Sebastian Hernan Castillo Gomez</h1>
