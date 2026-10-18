@@ -63,6 +63,18 @@
   margin-top: 1.5rem;
 }
 
+.enlaces-sociales-contacto a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icono-red-social {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 auto;
+}
+
 .enlaces-navegacion {
   margin-left: auto;
 }
@@ -166,12 +178,6 @@
   color: #fff;
   background-color: #212529;
   text-align: center;
-}
-
-.enlace-linkedin-pie {
-  display: inline-block;
-  margin-bottom: 0.75rem;
-  color: #fff;
 }
 
 .derechos-pie {
