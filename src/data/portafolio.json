@@ -1,0 +1,6 @@
+{
+  "profile": { "name": "Tu Nombre", "title": "Desarrollador Web" },
+  "projects": [
+    { "id": 1, "title": "Proyecto 1", "description": "Descripción corta", "tags": ["React", "Bootstrap"] }
+  ]
+}
