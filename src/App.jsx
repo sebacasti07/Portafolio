@@ -10,6 +10,7 @@ import Contacto from './components/Contactos';
 function Aplicacion() {
   const [proyectos, setProyectos] = useState([]);
   const [noticias, setNoticias] = useState([]);
+  const [modoOscuro, setModoOscuro] = useState(false);
 
   useEffect(() => {
     // Carga dinámica desde el archivo JSON ubicado en public/data/.
@@ -23,7 +24,16 @@ function Aplicacion() {
   }, []);
 
   return (
-    <div>
+    <div className={`aplicacion${modoOscuro ? ' modo-oscuro' : ''}`}>
+      <button
+        type="button"
+        className="boton-modo-oscuro"
+        onClick={() => setModoOscuro((anterior) => !anterior)}
+        aria-pressed={modoOscuro}
+        aria-label={modoOscuro ? 'Activar modo claro' : 'Activar modo oscuro'}
+      >
+        {modoOscuro ? ' Modo claro' : ' Modo oscuro'}
+      </button>
       <BarraNavegacion />
       <Perfil />
       <Proyectos proyectos={proyectos} />
@@ -31,7 +41,7 @@ function Aplicacion() {
       <Contacto />
       <footer className="pie-pagina">
         <p className="derechos-pie">
-          © 2026 Sebastian Hernan Castillo Gomez. Todos los derechos reservados.
+          © 2026 - Todos los derechos reservados.
         </p>
       </footer>
     </div>
