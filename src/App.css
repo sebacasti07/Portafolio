@@ -161,6 +161,23 @@
   text-align: center;
 }
 
+.pie-pagina {
+  padding: 1.5rem 1rem;
+  color: #fff;
+  background-color: #212529;
+  text-align: center;
+}
+
+.enlace-linkedin-pie {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.derechos-pie {
+  margin: 0;
+}
+
 @media (min-width: 1200px) {
   .nombre-perfil {
     font-size: 3.5rem;

@@ -29,6 +29,19 @@ function Aplicacion() {
       <Proyectos proyectos={proyectos} />
       <Noticias noticias={noticias} />
       <Contacto />
+      <footer className="pie-pagina">
+        <a
+          className="enlace-linkedin-pie"
+          href="https://www.linkedin.com/in/sebastian-hernan-castillo-gomez-b15714349/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <p className="derechos-pie">
+          © 2026 Sebastian Hernan Castillo Gomez. Todos los derechos reservados.
+        </p>
+      </footer>
     </div>
   );
 }
